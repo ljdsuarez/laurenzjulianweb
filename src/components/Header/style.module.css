@@ -55,10 +55,6 @@
   opacity: 0;
 }
 
-.shop {
-  display: none;
-}
-
 .burger {
   width: 22.5px;
   position: relative;
@@ -111,10 +107,5 @@
 
   .bar {
     font-size: 15px;
-  }
-
-  .shop {
-    display: block;
-    cursor: pointer;
   }
 }

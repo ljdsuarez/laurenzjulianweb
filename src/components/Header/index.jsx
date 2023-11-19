@@ -6,14 +6,16 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { opacity, background } from "./anim";
 import Nav from "./Nav";
+import Image from "next/image";
 
 export default function Index() {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <div class={styles.header}>
+    <div className={styles.header}>
       <div className={styles.bar}>
-        <Link href="/">
+        <Link href="/" style={{ display: "flex" }}>
+          <Image src="/logo.png" alt="logo" width={25} height={25}></Image>
           laurenz<strong>julian</strong>
         </Link>
         <div
@@ -44,7 +46,6 @@ export default function Index() {
           animate={!isActive ? "open" : "closed"}
           className={styles.shopContainer}
         >
-          <p className={styles.shop}>About</p>
           <div className={styles.el}>
             <p>Contact</p>
           </div>
