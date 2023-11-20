@@ -31,7 +31,9 @@ export default function Home() {
       </AnimatePresence>
 
       <Intro />
-      <Works />
+      <div className={styles.mobileHide}>
+        <Works />
+      </div>
       <Footer />
     </main>
   );
