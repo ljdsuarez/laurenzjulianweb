@@ -62,7 +62,7 @@ export default function Index() {
 
   return (
     <div className={styles.page}>
-      <div className={styles.spacer}></div>
+      <div className={styles.spacer1}></div>
       <div ref={gallery} className={styles.gallery}>
         <div className={styles.galleryWrapper}>
           <Column images={[images[0], images[1], images[2]]} y={y} />
@@ -72,7 +72,7 @@ export default function Index() {
         </div>
       </div>
 
-      <div className={styles.spacer}></div>
+      <div className={styles.spacer2}></div>
     </div>
   );
 }
